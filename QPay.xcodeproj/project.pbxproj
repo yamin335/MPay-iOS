@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E79349024E4C0010005B389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79348F24E4C0010005B389 /* AppDelegate.swift */; };
+		6E79349224E4C0010005B389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79349124E4C0010005B389 /* SceneDelegate.swift */; };
+		6E79349524E4C0010005B389 /* QPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E79349324E4C0010005B389 /* QPay.xcdatamodeld */; };
+		6E79349724E4C0010005B389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79349624E4C0010005B389 /* ContentView.swift */; };
+		6E79349924E4C0020005B389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E79349824E4C0020005B389 /* Assets.xcassets */; };
+		6E79349C24E4C0020005B389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E79349B24E4C0020005B389 /* Preview Assets.xcassets */; };
+		6E79349F24E4C0020005B389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E79349D24E4C0020005B389 /* LaunchScreen.storyboard */; };
+		6E7934AA24E4C0020005B389 /* QPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934A924E4C0020005B389 /* QPayTests.swift */; };
+		6E7934B524E4C0020005B389 /* QPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934B424E4C0020005B389 /* QPayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E7934A624E4C0020005B389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E79348424E4C0010005B389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E79348B24E4C0010005B389;
+			remoteInfo = QPay;
+		};
+		6E7934B124E4C0020005B389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E79348424E4C0010005B389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E79348B24E4C0010005B389;
+			remoteInfo = QPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E79348C24E4C0010005B389 /* QPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E79348F24E4C0010005B389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E79349124E4C0010005B389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E79349424E4C0010005B389 /* QPay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QPay.xcdatamodel; sourceTree = "<group>"; };
+		6E79349624E4C0010005B389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6E79349824E4C0020005B389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E79349B24E4C0020005B389 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E79349E24E4C0020005B389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E7934A024E4C0020005B389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7934A524E4C0020005B389 /* QPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7934A924E4C0020005B389 /* QPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPayTests.swift; sourceTree = "<group>"; };
+		6E7934AB24E4C0020005B389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7934B024E4C0020005B389 /* QPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7934B424E4C0020005B389 /* QPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPayUITests.swift; sourceTree = "<group>"; };
+		6E7934B624E4C0020005B389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E79348924E4C0010005B389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7934A224E4C0020005B389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7934AD24E4C0020005B389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E79348324E4C0010005B389 = {
+			isa = PBXGroup;
+			children = (
+				6E79348E24E4C0010005B389 /* QPay */,
+				6E7934A824E4C0020005B389 /* QPayTests */,
+				6E7934B324E4C0020005B389 /* QPayUITests */,
+				6E79348D24E4C0010005B389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E79348D24E4C0010005B389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E79348C24E4C0010005B389 /* QPay.app */,
+				6E7934A524E4C0020005B389 /* QPayTests.xctest */,
+				6E7934B024E4C0020005B389 /* QPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E79348E24E4C0010005B389 /* QPay */ = {
+			isa = PBXGroup;
+			children = (
+				6E79348F24E4C0010005B389 /* AppDelegate.swift */,
+				6E79349124E4C0010005B389 /* SceneDelegate.swift */,
+				6E79349624E4C0010005B389 /* ContentView.swift */,
+				6E79349824E4C0020005B389 /* Assets.xcassets */,
+				6E79349D24E4C0020005B389 /* LaunchScreen.storyboard */,
+				6E7934A024E4C0020005B389 /* Info.plist */,
+				6E79349324E4C0010005B389 /* QPay.xcdatamodeld */,
+				6E79349A24E4C0020005B389 /* Preview Content */,
+			);
+			path = QPay;
+			sourceTree = "<group>";
+		};
+		6E79349A24E4C0020005B389 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6E79349B24E4C0020005B389 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E7934A824E4C0020005B389 /* QPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E7934A924E4C0020005B389 /* QPayTests.swift */,
+				6E7934AB24E4C0020005B389 /* Info.plist */,
+			);
+			path = QPayTests;
+			sourceTree = "<group>";
+		};
+		6E7934B324E4C0020005B389 /* QPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E7934B424E4C0020005B389 /* QPayUITests.swift */,
+				6E7934B624E4C0020005B389 /* Info.plist */,
+			);
+			path = QPayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E79348B24E4C0010005B389 /* QPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7934B924E4C0020005B389 /* Build configuration list for PBXNativeTarget "QPay" */;
+			buildPhases = (
+				6E79348824E4C0010005B389 /* Sources */,
+				6E79348924E4C0010005B389 /* Frameworks */,
+				6E79348A24E4C0010005B389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QPay;
+			productName = QPay;
+			productReference = 6E79348C24E4C0010005B389 /* QPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E7934A424E4C0020005B389 /* QPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7934BC24E4C0020005B389 /* Build configuration list for PBXNativeTarget "QPayTests" */;
+			buildPhases = (
+				6E7934A124E4C0020005B389 /* Sources */,
+				6E7934A224E4C0020005B389 /* Frameworks */,
+				6E7934A324E4C0020005B389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E7934A724E4C0020005B389 /* PBXTargetDependency */,
+			);
+			name = QPayTests;
+			productName = QPayTests;
+			productReference = 6E7934A524E4C0020005B389 /* QPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E7934AF24E4C0020005B389 /* QPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7934BF24E4C0020005B389 /* Build configuration list for PBXNativeTarget "QPayUITests" */;
+			buildPhases = (
+				6E7934AC24E4C0020005B389 /* Sources */,
+				6E7934AD24E4C0020005B389 /* Frameworks */,
+				6E7934AE24E4C0020005B389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E7934B224E4C0020005B389 /* PBXTargetDependency */,
+			);
+			name = QPayUITests;
+			productName = QPayUITests;
+			productReference = 6E7934B024E4C0020005B389 /* QPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E79348424E4C0010005B389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = QPay;
+				TargetAttributes = {
+					6E79348B24E4C0010005B389 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					6E7934A424E4C0020005B389 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 6E79348B24E4C0010005B389;
+					};
+					6E7934AF24E4C0020005B389 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 6E79348B24E4C0010005B389;
+					};
+				};
+			};
+			buildConfigurationList = 6E79348724E4C0010005B389 /* Build configuration list for PBXProject "QPay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E79348324E4C0010005B389;
+			productRefGroup = 6E79348D24E4C0010005B389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E79348B24E4C0010005B389 /* QPay */,
+				6E7934A424E4C0020005B389 /* QPayTests */,
+				6E7934AF24E4C0020005B389 /* QPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E79348A24E4C0010005B389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E79349F24E4C0020005B389 /* LaunchScreen.storyboard in Resources */,
+				6E79349C24E4C0020005B389 /* Preview Assets.xcassets in Resources */,
+				6E79349924E4C0020005B389 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7934A324E4C0020005B389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7934AE24E4C0020005B389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E79348824E4C0010005B389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E79349024E4C0010005B389 /* AppDelegate.swift in Sources */,
+				6E79349524E4C0010005B389 /* QPay.xcdatamodeld in Sources */,
+				6E79349724E4C0010005B389 /* ContentView.swift in Sources */,
+				6E79349224E4C0010005B389 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7934A124E4C0020005B389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7934AA24E4C0020005B389 /* QPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7934AC24E4C0020005B389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7934B524E4C0020005B389 /* QPayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E7934A724E4C0020005B389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E79348B24E4C0010005B389 /* QPay */;
+			targetProxy = 6E7934A624E4C0020005B389 /* PBXContainerItemProxy */;
+		};
+		6E7934B224E4C0020005B389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E79348B24E4C0010005B389 /* QPay */;
+			targetProxy = 6E7934B124E4C0020005B389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E79349D24E4C0020005B389 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E79349E24E4C0020005B389 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E7934B724E4C0020005B389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E7934B824E4C0020005B389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E7934BA24E4C0020005B389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QPay/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = QPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qpay.customer.QPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E7934BB24E4C0020005B389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QPay/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = QPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qpay.customer.QPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E7934BD24E4C0020005B389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QPayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qpay.customer.QPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QPay.app/QPay";
+			};
+			name = Debug;
+		};
+		6E7934BE24E4C0020005B389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QPayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qpay.customer.QPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QPay.app/QPay";
+			};
+			name = Release;
+		};
+		6E7934C024E4C0020005B389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qpay.customer.QPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QPay;
+			};
+			name = Debug;
+		};
+		6E7934C124E4C0020005B389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qpay.customer.QPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E79348724E4C0010005B389 /* Build configuration list for PBXProject "QPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7934B724E4C0020005B389 /* Debug */,
+				6E7934B824E4C0020005B389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7934B924E4C0020005B389 /* Build configuration list for PBXNativeTarget "QPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7934BA24E4C0020005B389 /* Debug */,
+				6E7934BB24E4C0020005B389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7934BC24E4C0020005B389 /* Build configuration list for PBXNativeTarget "QPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7934BD24E4C0020005B389 /* Debug */,
+				6E7934BE24E4C0020005B389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7934BF24E4C0020005B389 /* Build configuration list for PBXNativeTarget "QPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7934C024E4C0020005B389 /* Debug */,
+				6E7934C124E4C0020005B389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E79349324E4C0010005B389 /* QPay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E79349424E4C0010005B389 /* QPay.xcdatamodel */,
+			);
+			currentVersion = 6E79349424E4C0010005B389 /* QPay.xcdatamodel */;
+			path = QPay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6E79348424E4C0010005B389 /* Project object */;
+}
