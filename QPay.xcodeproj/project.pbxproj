@@ -10,12 +10,20 @@
 		6E79349024E4C0010005B389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79348F24E4C0010005B389 /* AppDelegate.swift */; };
 		6E79349224E4C0010005B389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79349124E4C0010005B389 /* SceneDelegate.swift */; };
 		6E79349524E4C0010005B389 /* QPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E79349324E4C0010005B389 /* QPay.xcdatamodeld */; };
-		6E79349724E4C0010005B389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79349624E4C0010005B389 /* ContentView.swift */; };
 		6E79349924E4C0020005B389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E79349824E4C0020005B389 /* Assets.xcassets */; };
 		6E79349C24E4C0020005B389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E79349B24E4C0020005B389 /* Preview Assets.xcassets */; };
 		6E79349F24E4C0020005B389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E79349D24E4C0020005B389 /* LaunchScreen.storyboard */; };
 		6E7934AA24E4C0020005B389 /* QPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934A924E4C0020005B389 /* QPayTests.swift */; };
 		6E7934B524E4C0020005B389 /* QPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934B424E4C0020005B389 /* QPayUITests.swift */; };
+		6E7934C624E4C6CC0005B389 /* AppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934C524E4C6CC0005B389 /* AppContentView.swift */; };
+		6E7934C824E4C8640005B389 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934C724E4C8640005B389 /* UserData.swift */; };
+		6E7934CD24E4CBDA0005B389 /* AnyGestureRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934CC24E4CBDA0005B389 /* AnyGestureRecogniser.swift */; };
+		6E7934CF24E4D0230005B389 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934CE24E4D0230005B389 /* Colors.swift */; };
+		6E7934D124E4D0470005B389 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934D024E4D0470005B389 /* Extensions.swift */; };
+		6E7934D324E4DA630005B389 /* LoginAndMainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934D224E4DA630005B389 /* LoginAndMainContainer.swift */; };
+		6E7934D624E4DCE80005B389 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934D524E4DCE80005B389 /* LoginView.swift */; };
+		6E7934D824E4DD170005B389 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934D724E4DD170005B389 /* SplashView.swift */; };
+		6E7934DA24E4DD7C0005B389 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7934D924E4DD7C0005B389 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +48,6 @@
 		6E79348F24E4C0010005B389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E79349124E4C0010005B389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6E79349424E4C0010005B389 /* QPay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QPay.xcdatamodel; sourceTree = "<group>"; };
-		6E79349624E4C0010005B389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E79349824E4C0020005B389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E79349B24E4C0020005B389 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E79349E24E4C0020005B389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,15 @@
 		6E7934B024E4C0020005B389 /* QPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7934B424E4C0020005B389 /* QPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPayUITests.swift; sourceTree = "<group>"; };
 		6E7934B624E4C0020005B389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7934C524E4C6CC0005B389 /* AppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentView.swift; sourceTree = "<group>"; };
+		6E7934C724E4C8640005B389 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		6E7934CC24E4CBDA0005B389 /* AnyGestureRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyGestureRecogniser.swift; sourceTree = "<group>"; };
+		6E7934CE24E4D0230005B389 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6E7934D024E4D0470005B389 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6E7934D224E4DA630005B389 /* LoginAndMainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndMainContainer.swift; sourceTree = "<group>"; };
+		6E7934D524E4DCE80005B389 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6E7934D724E4DD170005B389 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		6E7934D924E4DD7C0005B389 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				6E79348E24E4C0010005B389 /* QPay */,
+				6E79349324E4C0010005B389 /* QPay.xcdatamodeld */,
 				6E7934A824E4C0020005B389 /* QPayTests */,
 				6E7934B324E4C0020005B389 /* QPayUITests */,
 				6E79348D24E4C0010005B389 /* Products */,
@@ -101,14 +118,15 @@
 		6E79348E24E4C0010005B389 /* QPay */ = {
 			isa = PBXGroup;
 			children = (
+				6E7934A024E4C0020005B389 /* Info.plist */,
 				6E79348F24E4C0010005B389 /* AppDelegate.swift */,
 				6E79349124E4C0010005B389 /* SceneDelegate.swift */,
-				6E79349624E4C0010005B389 /* ContentView.swift */,
 				6E79349824E4C0020005B389 /* Assets.xcassets */,
 				6E79349D24E4C0020005B389 /* LaunchScreen.storyboard */,
-				6E7934A024E4C0020005B389 /* Info.plist */,
-				6E79349324E4C0010005B389 /* QPay.xcdatamodeld */,
+				6E7934C224E4C5010005B389 /* login */,
+				6E7934D424E4DB2E0005B389 /* Main */,
 				6E79349A24E4C0020005B389 /* Preview Content */,
+				6E7934CB24E4CBB80005B389 /* Utility */,
 			);
 			path = QPay;
 			sourceTree = "<group>";
@@ -137,6 +155,36 @@
 				6E7934B624E4C0020005B389 /* Info.plist */,
 			);
 			path = QPayUITests;
+			sourceTree = "<group>";
+		};
+		6E7934C224E4C5010005B389 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				6E7934D524E4DCE80005B389 /* LoginView.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		6E7934CB24E4CBB80005B389 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6E7934C724E4C8640005B389 /* UserData.swift */,
+				6E7934CC24E4CBDA0005B389 /* AnyGestureRecogniser.swift */,
+				6E7934CE24E4D0230005B389 /* Colors.swift */,
+				6E7934D024E4D0470005B389 /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6E7934D424E4DB2E0005B389 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6E7934C524E4C6CC0005B389 /* AppContentView.swift */,
+				6E7934D224E4DA630005B389 /* LoginAndMainContainer.swift */,
+				6E7934D724E4DD170005B389 /* SplashView.swift */,
+				6E7934D924E4DD7C0005B389 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7934C624E4C6CC0005B389 /* AppContentView.swift in Sources */,
+				6E7934DA24E4DD7C0005B389 /* MainView.swift in Sources */,
+				6E7934D824E4DD170005B389 /* SplashView.swift in Sources */,
+				6E7934CF24E4D0230005B389 /* Colors.swift in Sources */,
+				6E7934C824E4C8640005B389 /* UserData.swift in Sources */,
+				6E7934D324E4DA630005B389 /* LoginAndMainContainer.swift in Sources */,
 				6E79349024E4C0010005B389 /* AppDelegate.swift in Sources */,
+				6E7934D124E4D0470005B389 /* Extensions.swift in Sources */,
 				6E79349524E4C0010005B389 /* QPay.xcdatamodeld in Sources */,
-				6E79349724E4C0010005B389 /* ContentView.swift in Sources */,
+				6E7934D624E4DCE80005B389 /* LoginView.swift in Sources */,
+				6E7934CD24E4CBDA0005B389 /* AnyGestureRecogniser.swift in Sources */,
 				6E79349224E4C0010005B389 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  QPay
 //
 //  Created by Md. Yamin on 8/13/20.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
-        Text("Hello, World Again! :D")
+        Text("Main View")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
