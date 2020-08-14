@@ -63,6 +63,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        
+//        for fontFamily in UIFont.familyNames {
+//            for fontName in UIFont.fontNames(forFamilyName: fontFamily) {
+//                print("\(fontName)")
+//            }
+//        }
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

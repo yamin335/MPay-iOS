@@ -13,5 +13,6 @@ final class UserData: ObservableObject  {
     @Published var selectedTabItem = 0
     @Published var isLoggedIn = false
     @Published var isSplashShown = true
+    @Published var loginFlow: Int = 0
     var successToastPublisher = PassthroughSubject<(Bool, String), Never>()
 }

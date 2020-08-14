@@ -9,44 +9,21 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
-        GeometryReader { geometry in
-            VStack(alignment: .center) {
-                Image("qpay_logo")
-                    .resizable()
-                    .scaledToFit()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
-                    .padding(.top, 80)
-                
-                Spacer()
-                
-                Button(action: {
-                    // Write button action here
-                }) {
-                    HStack{
-                        Spacer()
-                        Text("Continue")
-                            .foregroundColor(.white)
-                            .font(.system(size: 20, weight: .regular, design: .default))
-                        Spacer()
-                    }
-                    .padding(.top, 11)
-                    .padding(.bottom, 11)
-                    .background(Colors.colorGreenButton)
-                    .cornerRadius(4)
-                }.padding(.top, 32)
-                .padding(.bottom, 32)
-                .padding(.leading, 32)
-                .padding(.trailing, 32)
-            }.frame(width: geometry.size.width, height: geometry.size.height)
-        }.background(Colors.colorTheme)
-        .edgesIgnoringSafeArea(.all)
+        ZStack {
+            if userData.loginFlow == 0 {
+                LoginPagerView()
+            } else if userData.loginFlow == 1 {
+                LoginNumberView()
+            }
+        }
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView().environmentObject(UserData())
     }
 }

@@ -11,5 +11,6 @@ import SwiftUI
 
 struct Colors {
     static let colorTheme = Color(hexValue: "#1E4356")
+    static let colorThemeBlue = Color(hexValue: "#2196F3")
     static let colorGreenButton = Color(hexValue: "#70DB44")
 }
