@@ -21,7 +21,7 @@ struct LoginButtonModifier: ViewModifier {
     }
 
     func body(content: Content) -> some View {
-        GeometryReader { geometry in
+        //GeometryReader { geometry in
             content
                 .padding(.bottom, self.bottomPadding)
                 .animation(.easeOut(duration: 0.15))
@@ -43,6 +43,6 @@ struct LoginButtonModifier: ViewModifier {
                     }
                     .subscribe(Subscribers.Assign(object: self, keyPath: \.bottomPadding))
                 })
-        }
+       // }
     }
 }

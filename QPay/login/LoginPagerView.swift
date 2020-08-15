@@ -9,10 +9,12 @@
 import SwiftUI
 
 struct LoginPagerView: View {
+    @State var isView1Active: Bool = false
     @EnvironmentObject var userData: UserData
     @State var sliderCurrentPosition: Int = 0
     
     var body: some View {
+         NavigationView {
         GeometryReader { geometry in
             VStack(alignment: .center) {
                 Image("qpay_logo")
@@ -26,14 +28,14 @@ struct LoginPagerView: View {
                 
                 Spacer()
                 
-                Button(action: {
-                    self.userData.loginFlow = 1
-                }) {
+                NavigationLink(destination: LoginNumberView(), isActive: self.$isView1Active)  {
                     HStack{
                         Spacer()
+                     
                         Text("Continue")
                             .foregroundColor(.white)
                             .font(.system(size: 20, weight: .regular, design: .default))
+                       
                         Spacer()
                     }
                     .padding(.top, 11)
@@ -47,6 +49,7 @@ struct LoginPagerView: View {
             }.frame(width: geometry.size.width, height: geometry.size.height)
         }.background(Colors.colorTheme)
         .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
