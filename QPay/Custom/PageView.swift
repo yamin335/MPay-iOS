@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct PageView<Page: View>: View {
-    var viewControllers: [UIHostingController<Page>]
     @Binding var currentPage: Int
+    var viewControllers: [UIHostingController<Page>]
 
     init(currentPage: Binding<Int>, _ views: [Page]) {
         self.viewControllers = views.map { UIHostingController(rootView: $0) }
@@ -18,10 +18,12 @@ struct PageView<Page: View>: View {
     }
 
     var body: some View {
-        VStack(alignment: .center) {
-            PageViewController(controllers: viewControllers, currentPage: $currentPage)
-            PageControl(numberOfPages: viewControllers.count, currentPage: $currentPage)
-                .padding(.all)
+        GeometryReader { geometry in
+            VStack(alignment: .center) {
+                PageViewController(controllers: self.viewControllers, currentPage: self.$currentPage)
+                PageControl(numberOfPages: self.viewControllers.count, currentPage: self.$currentPage)
+                    .padding(.all)
+            }
         }
     }
 }

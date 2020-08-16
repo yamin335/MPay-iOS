@@ -16,6 +16,10 @@
 		6E49C10324E64EFE00BA30C0 /* LoginPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E49C10224E64EFE00BA30C0 /* LoginPagerView.swift */; };
 		6E49C10924E654AF00BA30C0 /* ViewModifierOnKeyboardAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E49C10824E654AF00BA30C0 /* ViewModifierOnKeyboardAppear.swift */; };
 		6E49C10B24E655DB00BA30C0 /* LoginButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E49C10A24E655DB00BA30C0 /* LoginButtonModifier.swift */; };
+		6E6E4E3424E8C99600FA4614 /* LoginOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E4E3324E8C99600FA4614 /* LoginOTPView.swift */; };
+		6E6E4E3624E8D14E00FA4614 /* PlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E4E3524E8D14E00FA4614 /* PlaceHolder.swift */; };
+		6E6E4E3824E8D43700FA4614 /* LoginPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E4E3724E8D43700FA4614 /* LoginPinView.swift */; };
+		6E6E4E3A24E8DACC00FA4614 /* LoginProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E4E3924E8DACC00FA4614 /* LoginProfileView.swift */; };
 		6E79349024E4C0010005B389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79348F24E4C0010005B389 /* AppDelegate.swift */; };
 		6E79349224E4C0010005B389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79349124E4C0010005B389 /* SceneDelegate.swift */; };
 		6E79349524E4C0010005B389 /* QPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E79349324E4C0010005B389 /* QPay.xcdatamodeld */; };
@@ -62,6 +66,10 @@
 		6E49C10224E64EFE00BA30C0 /* LoginPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPagerView.swift; sourceTree = "<group>"; };
 		6E49C10824E654AF00BA30C0 /* ViewModifierOnKeyboardAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierOnKeyboardAppear.swift; sourceTree = "<group>"; };
 		6E49C10A24E655DB00BA30C0 /* LoginButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonModifier.swift; sourceTree = "<group>"; };
+		6E6E4E3324E8C99600FA4614 /* LoginOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOTPView.swift; sourceTree = "<group>"; };
+		6E6E4E3524E8D14E00FA4614 /* PlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolder.swift; sourceTree = "<group>"; };
+		6E6E4E3724E8D43700FA4614 /* LoginPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPinView.swift; sourceTree = "<group>"; };
+		6E6E4E3924E8DACC00FA4614 /* LoginProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProfileView.swift; sourceTree = "<group>"; };
 		6E79348C24E4C0010005B389 /* QPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E79348F24E4C0010005B389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E79349124E4C0010005B389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +209,9 @@
 				6E49C0F924E6293500BA30C0 /* LoginSliderView.swift */,
 				6E49C0FE24E6394800BA30C0 /* LoginNumberView.swift */,
 				6E49C10224E64EFE00BA30C0 /* LoginPagerView.swift */,
+				6E6E4E3324E8C99600FA4614 /* LoginOTPView.swift */,
+				6E6E4E3724E8D43700FA4614 /* LoginPinView.swift */,
+				6E6E4E3924E8DACC00FA4614 /* LoginProfileView.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -215,6 +226,7 @@
 				6E49C10024E64C3B00BA30C0 /* NavigationLazyView.swift */,
 				6E49C10824E654AF00BA30C0 /* ViewModifierOnKeyboardAppear.swift */,
 				6E49C10A24E655DB00BA30C0 /* LoginButtonModifier.swift */,
+				6E6E4E3524E8D14E00FA4614 /* PlaceHolder.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -361,11 +373,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6E4E3824E8D43700FA4614 /* LoginPinView.swift in Sources */,
+				6E6E4E3424E8C99600FA4614 /* LoginOTPView.swift in Sources */,
 				6E7934C624E4C6CC0005B389 /* AppContentView.swift in Sources */,
 				6E7934DA24E4DD7C0005B389 /* MainView.swift in Sources */,
 				6E49C10924E654AF00BA30C0 /* ViewModifierOnKeyboardAppear.swift in Sources */,
 				6E7934D824E4DD170005B389 /* SplashView.swift in Sources */,
 				6E49C0FF24E6394800BA30C0 /* LoginNumberView.swift in Sources */,
+				6E6E4E3624E8D14E00FA4614 /* PlaceHolder.swift in Sources */,
 				6E7934CF24E4D0230005B389 /* Colors.swift in Sources */,
 				6E7934C824E4C8640005B389 /* UserData.swift in Sources */,
 				6E49C10324E64EFE00BA30C0 /* LoginPagerView.swift in Sources */,
@@ -374,6 +389,7 @@
 				6E49C0FA24E6293500BA30C0 /* LoginSliderView.swift in Sources */,
 				6E7934D124E4D0470005B389 /* Extensions.swift in Sources */,
 				6E49C0F624E6288900BA30C0 /* PageControl.swift in Sources */,
+				6E6E4E3A24E8DACC00FA4614 /* LoginProfileView.swift in Sources */,
 				6E49C10B24E655DB00BA30C0 /* LoginButtonModifier.swift in Sources */,
 				6E79349524E4C0010005B389 /* QPay.xcdatamodeld in Sources */,
 				6E49C0F824E628D500BA30C0 /* PageView.swift in Sources */,
@@ -549,7 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"QPay/Preview Content\"";
-				DEVELOPMENT_TEAM = 78X27C8U99;
+				DEVELOPMENT_TEAM = 9D93WZA28F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = QPay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -572,7 +588,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"QPay/Preview Content\"";
-				DEVELOPMENT_TEAM = 78X27C8U99;
+				DEVELOPMENT_TEAM = 9D93WZA28F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = QPay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

@@ -1,25 +1,24 @@
 //
-//  LoginNumberView.swift
+//  LoginProfileView.swift
 //  QPay
 //
-//  Created by Md. Yamin on 8/14/20.
+//  Created by Md. Yamin on 8/16/20.
 //  Copyright © 2020 QPay. All rights reserved.
 //
-import UIKit
-import SwiftUI
-import Combine
 
-struct LoginNumberView: View {
-    static public let TAG: String = "LoginNumberView"
+import SwiftUI
+
+struct LoginProfileView: View {
+    static public let TAG: String = "LoginProfileView"
     @EnvironmentObject var userData: UserData
-    @State var mobileNumber: String = ""
+    @State var fullName: String = ""
     
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: .center) {
                 HStack(alignment: .center) {
                     Button(action: {
-                        self.userData.loginFlow = LoginPagerView.TAG
+                        self.userData.loginFlow = LoginPinView.TAG
                     }) {
                         Image(systemName: "arrow.left")
                         .imageScale(.large)
@@ -28,53 +27,51 @@ struct LoginNumberView: View {
                         .cornerRadius(0)
                     }
                     
-                    Text("Welcome to QPay ").foregroundColor(.white).font(Font.custom("Verdana", size: 20)).padding(.leading, 16)
+                    Text("Profile ").foregroundColor(.white).font(Font.custom("Verdana", size: 20)).padding(.leading, 16)
                     
                     Spacer()
                 }.padding(.top, 52).padding(.leading, 20)
-                Image("qpay_logo")
+                
+                Image("profile_placeholder")
                     .resizable()
                     .scaledToFit()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
+                    .frame(width: 160)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 4))
                     .padding(.top, 20)
                 
                 HStack {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Mobile")
+                        Text("Full Name")
                             .foregroundColor(.white)
-                            .font(.system(size: 18, weight: .regular, design: .default))
+                            .font(Font.custom("Verdana", size: 18))
                         VStack(alignment: .leading, spacing: 6) {
-                            HStack(alignment: .top) {
-                                Text("+88")
-                                .foregroundColor(.white)
-                                .font(.system(size: 20, weight: .regular, design: .default))
-                                TextField("", text: self.$mobileNumber, onEditingChanged: { changed in
-                                    if changed {
-                                        
-                                    } else {
-                                        
-                                    }
+                            TextField("", text: self.$fullName, onEditingChanged: { changed in
+                                if changed {
                                     
-                                })
-                                .placeHolder(Text("Enter mobile number").foregroundColor(Colors.colorGray).font(Font.custom("Verdana", size: 20)), show: self.mobileNumber.isEmpty)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20, weight: .regular, design: .default))
-                                    .keyboardType(.namePhonePad)
-                            }
+                                } else {
+                                    
+                                }
+                                
+                            })
+                            .placeHolder(Text("Enter your full name").foregroundColor(Colors.colorGray).font(Font.custom("Verdana", size: 20)), show: self.fullName.isEmpty)
+                            .foregroundColor(.white)
+                            .font(.system(size: 20, weight: .regular, design: .default))
+                                .keyboardType(.default)
                             Rectangle().frame(height: 2).foregroundColor(Colors.colorThemeBlue)
                         }
                     }.padding(.horizontal, 20)
                     Spacer()
-                }.frame(width: geometry.size.width).padding(.top, 32)
+                }.frame(width: geometry.size.width).padding(.top, 40)
                 
                 Spacer()
                 Button(action: {
-                    self.userData.loginFlow = LoginOTPView.TAG
+                    self.userData.isLoggedIn = true
                 }) {
                     HStack{
                         Spacer()
-                        Text("Proceed")
+                        Text("Submit")
                             .foregroundColor(.white)
                             .font(.system(size: 20, weight: .regular, design: .default))
                         Spacer()
@@ -92,8 +89,8 @@ struct LoginNumberView: View {
     }
 }
 
-struct LoginNumberView_Previews: PreviewProvider {
+struct LoginProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginNumberView().environmentObject(UserData())
+        LoginProfileView()
     }
 }

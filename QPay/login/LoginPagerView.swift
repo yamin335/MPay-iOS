@@ -9,12 +9,11 @@
 import SwiftUI
 
 struct LoginPagerView: View {
-    @State var isView1Active: Bool = false
+    static public let TAG: String = "LoginPagerView"
     @EnvironmentObject var userData: UserData
     @State var sliderCurrentPosition: Int = 0
     
     var body: some View {
-         NavigationView {
         GeometryReader { geometry in
             VStack(alignment: .center) {
                 Image("qpay_logo")
@@ -24,14 +23,15 @@ struct LoginPagerView: View {
                     .frame(width: 200)
                     .padding(.top, 80)
                 
-                PageView(currentPage: self.$sliderCurrentPosition, [LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way"), LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way"), LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way"), LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way"), LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way")]).padding(.top, 32)
+                PageView(currentPage: self.$sliderCurrentPosition, [LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way"), LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way"), LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way"), LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way"), LoginSliderView(title: "Transfer your Money", description: "Easy, Fast and Secure Way")]).frame(width: geometry.size.width).padding(.top, 32)
                 
                 Spacer()
                 
-                NavigationLink(destination: LoginNumberView(), isActive: self.$isView1Active)  {
+                Button(action: {
+                    self.userData.loginFlow = LoginNumberView.TAG
+                }) {
                     HStack{
                         Spacer()
-                     
                         Text("Continue")
                             .foregroundColor(.white)
                             .font(.system(size: 20, weight: .regular, design: .default))
@@ -46,10 +46,10 @@ struct LoginPagerView: View {
                 .padding(.bottom, 32)
                 .padding(.leading, 32)
                 .padding(.trailing, 32)
+                
             }.frame(width: geometry.size.width, height: geometry.size.height)
         }.background(Colors.colorTheme)
         .edgesIgnoringSafeArea(.all)
-        }
     }
 }
 

@@ -13,6 +13,9 @@ struct LoginSliderView: View {
     @State var description: String
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+            }
             Image("slider_image")
             .resizable()
             .scaledToFit().padding(.top, 16)

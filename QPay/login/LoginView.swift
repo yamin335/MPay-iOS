@@ -13,10 +13,16 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
-            if userData.loginFlow == 0 {
+            if userData.loginFlow == LoginPagerView.TAG {
                 LoginPagerView()
-            } else if userData.loginFlow == 1 {
+            } else if userData.loginFlow == LoginNumberView.TAG {
                 LoginNumberView()
+            } else if userData.loginFlow == LoginOTPView.TAG {
+                LoginOTPView()
+            } else if userData.loginFlow == LoginPinView.TAG {
+                LoginPinView()
+            } else if userData.loginFlow == LoginProfileView.TAG {
+                LoginProfileView()
             }
         }
     }

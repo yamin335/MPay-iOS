@@ -21,28 +21,25 @@ struct LoginButtonModifier: ViewModifier {
     }
 
     func body(content: Content) -> some View {
-        //GeometryReader { geometry in
-            content
-                .padding(.bottom, self.bottomPadding)
-                .animation(.easeOut(duration: 0.15))
-                .onAppear(perform: {
-                    NotificationCenter.Publisher(center: NotificationCenter.default, name: UIResponder.keyboardWillShowNotification)
-                        .merge(with: NotificationCenter.Publisher(center: NotificationCenter.default, name: UIResponder.keyboardWillChangeFrameNotification))
-                        .compactMap { notification in
-                            notification.userInfo?["UIKeyboardFrameEndUserInfoKey"] as? CGRect
-                    }
-                    .map { rect in
-                        //rect.height - geometry.safeAreaInsets.bottom
-                        rect.height
-                    }
-                    .subscribe(Subscribers.Assign(object: self, keyPath: \.bottomPadding))
+        content
+        .padding(.bottom, self.bottomPadding)
+        .animation(.easeOut(duration: 0.15))
+        .onAppear(perform: {
+            NotificationCenter.Publisher(center: NotificationCenter.default, name: UIResponder.keyboardWillShowNotification)
+                .merge(with: NotificationCenter.Publisher(center: NotificationCenter.default, name: UIResponder.keyboardWillChangeFrameNotification))
+                .compactMap { notification in
+                    notification.userInfo?["UIKeyboardFrameEndUserInfoKey"] as? CGRect
+            }
+            .map { rect in
+                rect.height
+            }
+            .subscribe(Subscribers.Assign(object: self, keyPath: \.bottomPadding))
 
-                    NotificationCenter.Publisher(center: NotificationCenter.default, name: UIResponder.keyboardWillHideNotification)
-                        .compactMap { notification in
-                            self.bottomPad
-                    }
-                    .subscribe(Subscribers.Assign(object: self, keyPath: \.bottomPadding))
-                })
-       // }
+            NotificationCenter.Publisher(center: NotificationCenter.default, name: UIResponder.keyboardWillHideNotification)
+                .compactMap { notification in
+                    self.bottomPad
+            }
+            .subscribe(Subscribers.Assign(object: self, keyPath: \.bottomPadding))
+        })
     }
 }

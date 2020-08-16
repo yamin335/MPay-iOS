@@ -10,9 +10,9 @@ import SwiftUI
 import Combine
 
 final class UserData: ObservableObject  {
-    @Published var selectedTabItem = 0
+    @Published var selectedTabItem: Int = 0
     @Published var isLoggedIn = false
     @Published var isSplashShown = true
-    @Published var loginFlow: Int = 0
+    @Published var loginFlow: String = LoginPagerView.TAG
     var successToastPublisher = PassthroughSubject<(Bool, String), Never>()
 }
